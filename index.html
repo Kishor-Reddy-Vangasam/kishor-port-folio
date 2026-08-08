@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vangasam Kishor Reddy | MCA Student & AI Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Vangasam Kishor Reddy — MCA Student, AI & Full-Stack Developer specializing in Python, Machine Learning, Django, and REST APIs." />
+  <meta name="keywords" content="Kishor Reddy, AI Developer, Full Stack Developer, Python, Machine Learning, Django, MCA" />
+  <meta property="og:title" content="Vangasam Kishor Reddy | Portfolio" />
+  <meta property="og:description" content="MCA Student | AI & Full-Stack Developer" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── NAVBAR ─── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>KR<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow glow-1"></div>
+      <div class="hero-glow glow-2"></div>
+    </div>
+    <div class="particles" id="particles"></div>
+    <div class="hero-content container">
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot"></span>Available for Opportunities
+      </div>
+      <h1 class="hero-title reveal-up delay-1">
+        Vangasam<br />
+        <span class="gradient-text">Kishor Reddy</span>
+      </h1>
+      <p class="hero-role reveal-up delay-2">
+        <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-summary reveal-up delay-3">
+        MCA Student · AI &amp; Full-Stack Developer · Problem Solver
+      </p>
+      <div class="hero-actions reveal-up delay-4">
+        <a href="#projects" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+          View Projects
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Get In Touch
+        </a>
+        <a href="https://www.linkedin.com/in/kishor-reddy-vangasam28" target="_blank" rel="noopener" class="btn btn-ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/Kishor-Reddy-Vangasam" target="_blank" rel="noopener" class="btn btn-ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+      </div>
+      <div class="hero-stats reveal-up delay-5">
+        <div class="stat-card">
+          <span class="stat-num">8.5</span>
+          <span class="stat-label">BCA GPA</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-card">
+          <span class="stat-num">2+</span>
+          <span class="stat-label">Full-Stack Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-card">
+          <span class="stat-num">6+</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+    </a>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// About Me</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar reveal-left">
+          <div class="avatar-ring">
+            <div class="avatar-inner">
+              <img src="profile.jpg" alt="Vangasam Kishor Reddy" />
+            </div>
+          </div>
+          <div class="avatar-decoration dec-1"></div>
+          <div class="avatar-decoration dec-2"></div>
+        </div>
+        <div class="about-text reveal-right">
+          <p class="about-lead">
+            Enthusiastic <strong>MCA student</strong> with a strong foundation in <strong>Python, Machine Learning, Artificial Intelligence, SQL</strong>, and <strong>Full Stack Development</strong>.
+          </p>
+          <p class="about-body">
+            Passionate about building AI-driven solutions, REST APIs, and intelligent applications with strong problem-solving and analytical skills. Currently pursuing my MCA at MITS Deemed To Be University while also working as a Full Stack Development Intern at NxtWave.
+          </p>
+          <div class="about-tags">
+            <span class="about-tag">🤖 AI / ML Enthusiast</span>
+            <span class="about-tag">🌐 Full-Stack Dev</span>
+            <span class="about-tag">🐍 Python Expert</span>
+            <span class="about-tag">📊 Data-Driven Thinker</span>
+          </div>
+          <div class="about-contact-row">
+            <a href="tel:+918867082234" class="contact-chip">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.57 3.5 2 2 0 0 1 3.54 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9a16 16 0 0 0 6.9 6.9l1.36-1.36a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +91 88670 82234
+            </a>
+            <a href="mailto:kishorreddy2780@gmail.com" class="contact-chip">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              kishorreddy2780@gmail.com
+            </a>
+            <a href="mailto:25mrd00055@mits.ac.in" class="contact-chip">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              25mrd00055@mits.ac.in
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EDUCATION ─── -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// Education</span>
+        <h2 class="section-title">Academic Journey</h2>
+      </div>
+      <div class="education-timeline">
+
+        <div class="edu-card reveal-up delay-1">
+          <div class="edu-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="edu-body">
+            <div class="edu-header-row">
+              <div>
+                <h3 class="edu-degree">Master of Computer Applications (MCA)</h3>
+                <p class="edu-institution">MITS Deemed To Be University</p>
+              </div>
+              <span class="edu-badge current">Current</span>
+            </div>
+            <div class="edu-meta">
+              <span class="edu-year">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                2025 – Present
+              </span>
+              <span class="edu-gpa">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                GPA: 8.3 / 10
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card reveal-up delay-2">
+          <div class="edu-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="edu-body">
+            <div class="edu-header-row">
+              <div>
+                <h3 class="edu-degree">Bachelor of Computer Applications (BCA)</h3>
+                <p class="edu-institution">Bengaluru North University</p>
+              </div>
+              <span class="edu-badge completed">Completed</span>
+            </div>
+            <div class="edu-meta">
+              <span class="edu-year">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                2022 – 2025
+              </span>
+              <span class="edu-gpa">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                GPA: 8.5 / 10
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card reveal-up delay-3">
+          <div class="edu-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <div class="edu-body">
+            <div class="edu-header-row">
+              <div>
+                <h3 class="edu-degree">Class XII (Higher Secondary)</h3>
+                <p class="edu-institution">Emeralds Junior College</p>
+              </div>
+              <span class="edu-badge completed">Completed</span>
+            </div>
+            <div class="edu-meta">
+              <span class="edu-year">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                2020 – 2022
+              </span>
+              <span class="edu-gpa">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                GPA: 8.1 / 10
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// Technical Skills</span>
+        <h2 class="section-title">What I Work With</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-group reveal-up delay-1">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">⌨️</span>
+            <h3 class="skill-group-title">Languages</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-blue">Python</span>
+            <span class="pill pill-blue">Java</span>
+            <span class="pill pill-blue">TypeScript</span>
+            <span class="pill pill-blue">JavaScript</span>
+            <span class="pill pill-blue">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal-up delay-2">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">🤖</span>
+            <h3 class="skill-group-title">AI / ML</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-purple">Machine Learning</span>
+            <span class="pill pill-purple">Artificial Intelligence</span>
+            <span class="pill pill-purple">NumPy</span>
+            <span class="pill pill-purple">Pandas</span>
+            <span class="pill pill-purple">Scikit-learn</span>
+            <span class="pill pill-purple">Prompt Engineering</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal-up delay-3">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">⚙️</span>
+            <h3 class="skill-group-title">Backend & APIs</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-green">Django</span>
+            <span class="pill pill-green">Flask</span>
+            <span class="pill pill-green">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal-up delay-4">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">🗄️</span>
+            <h3 class="skill-group-title">Databases</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-orange">MySQL</span>
+            <span class="pill pill-orange">SQLite</span>
+            <span class="pill pill-orange">MongoDB</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal-up delay-5">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">🛠️</span>
+            <h3 class="skill-group-title">Tools & Platforms</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-gray">Git</span>
+            <span class="pill pill-gray">GitHub</span>
+            <span class="pill pill-gray">VS Code</span>
+            <span class="pill pill-gray">Postman</span>
+            <span class="pill pill-gray">Antigravity</span>
+            <span class="pill pill-gray">Claude</span>
+            <span class="pill pill-gray">Gemini</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal-up delay-6">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">🤝</span>
+            <h3 class="skill-group-title">Soft Skills</h3>
+          <div class="skill-pills">
+            <span class="pill pill-teal">Problem-Solving</span>
+            <span class="pill pill-teal">Analytical Thinking</span>
+            <span class="pill pill-teal">Communication</span>
+            <span class="pill pill-teal">Teamwork</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// Projects</span>
+        <h2 class="section-title">Things I've Built</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal-up delay-1">
+          <div class="project-card-inner">
+            <div class="project-icon-wrap">
+              <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            </div>
+            <div class="project-number">01</div>
+            <h3 class="project-title">FoodPulse — Food Ordering Application</h3>
+            <p class="project-desc">A full-stack food ordering platform with <strong>customer, restaurant, and admin modules</strong>. Features live order tracking, shopping cart, multi-role authentication, and a premium glassmorphic dark UI.</p>
+            <ul class="project-highlights">
+              <li>Built 20+ CRUD REST APIs using Django Function-Based Views across 22 URL routes</li>
+              <li>Implemented multi-role auth: Customer, Restaurant Owner &amp; Admin dashboards</li>
+              <li>Designed 5 Django ORM models with SQLite3 and full database seed scripts</li>
+              <li>Integrated Fetch API on frontend for seamless async backend communication</li>
+              <li>Included automated API test suite (20 CRUD tests via test_apis.py)</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span><span class="tech-tag">Django 6.0</span><span class="tech-tag">REST APIs</span><span class="tech-tag">SQLite</span><span class="tech-tag">JavaScript</span><span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span>
+            </div>
+            <a href="https://github.com/Kishor-Reddy-Vangasam/Food-Ordering-Application" target="_blank" rel="noopener" class="project-github-btn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up delay-2">
+          <div class="project-card-inner">
+            <div class="project-icon-wrap">
+              <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="project-number">02</div>
+            <h3 class="project-title">Employee Management System</h3>
+            <p class="project-desc">A full-stack Employee Management System built with <strong>Spring Boot &amp; React.js</strong> for managing employee records through a modern web interface with complete CRUD functionality.</p>
+            <ul class="project-highlights">
+              <li>Developed RESTful APIs with Spring Boot, Java &amp; Spring Data JPA (Maven build)</li>
+              <li>Built React.js frontend with reusable components and Bootstrap styling</li>
+              <li>Integrated MySQL database for persistent employee record storage</li>
+              <li>Implemented full CRUD: Add, View All, Update &amp; Delete employee records</li>
+              <li>Followed MVC architecture with Controller, Entity, Repository &amp; Service layers</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-tag">Java</span><span class="tech-tag">Spring Boot</span><span class="tech-tag">React.js</span><span class="tech-tag">MySQL</span><span class="tech-tag">REST APIs</span><span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span>
+            </div>
+            <a href="https://github.com/Kishor-Reddy-Vangasam/kishor-s-employee-management-system" target="_blank" rel="noopener" class="project-github-btn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up delay-3">
+          <div class="project-card-inner">
+            <div class="project-icon-wrap">
+              <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </div>
+            <div class="project-number">03</div>
+            <h3 class="project-title">Job Portal Application</h3>
+            <p class="project-desc">A full-stack job portal with <strong>candidate and recruiter modules</strong> built using Django. Includes job listings, search, application management, and CRUD operations for seamless hiring workflows.</p>
+            <ul class="project-highlights">
+              <li>Developed dual-role authentication for Candidates and Recruiters</li>
+              <li>Implemented job listing, search &amp; filter functionality with Django ORM</li>
+              <li>Built application tracking system for candidates to manage submissions</li>
+              <li>Created REST APIs for frontend-backend communication with SQLite database</li>
+              <li>Designed responsive UI using HTML, CSS &amp; JavaScript</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span><span class="tech-tag">Django</span><span class="tech-tag">REST APIs</span><span class="tech-tag">SQLite</span><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span>
+            </div>
+            <a href="https://github.com/Kishor-Reddy-Vangasam/python-fullstack" target="_blank" rel="noopener" class="project-github-btn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up delay-4">
+          <div class="project-card-inner">
+            <div class="project-icon-wrap">
+              <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <div class="project-number">04</div>
+            <h3 class="project-title">Digital India 2 — Government Website</h3>
+            <p class="project-desc">A responsive static website built as part of the <strong>Digital India</strong> initiative, showcasing government digital services and schemes with a clean, accessible, mobile-first design.</p>
+            <ul class="project-highlights">
+              <li>Built a fully responsive multi-page static website using HTML5 &amp; CSS3</li>
+              <li>Implemented mobile-first layout with fluid grids and media queries</li>
+              <li>Designed navigation, hero banners, service cards &amp; informational sections</li>
+              <li>Applied semantic HTML for better accessibility and SEO optimization</li>
+              <li>Achieved clean, government-style UI with professional typography</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Responsive Design</span>
+            </div>
+            <a href="https://github.com/Kishor-Reddy-Vangasam/DigitalIndia2" target="_blank" rel="noopener" class="project-github-btn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up delay-5">
+          <div class="project-card-inner">
+            <div class="project-icon-wrap">
+              <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <div class="project-number">05</div>
+            <h3 class="project-title">Bus Ticket Booking Application</h3>
+            <p class="project-desc">A web-based <strong>Bus Ticket Booking System</strong> to simplify intercity travel by enabling users to search routes, select seats, and book tickets online with a smooth user experience.</p>
+            <ul class="project-highlights">
+              <li>Designed bus route search with source, destination &amp; date filters</li>
+              <li>Implemented interactive seat selection UI with real-time availability indicators</li>
+              <li>Built passenger details form with ticket confirmation workflow</li>
+              <li>Created booking history and cancellation management features</li>
+              <li>Developed responsive frontend with HTML, CSS &amp; JavaScript</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Django</span><span class="tech-tag">SQLite</span>
+            </div>
+            <a href="https://github.com/Kishor-Reddy-Vangasam/Bus-Ticket-Booking-Application" target="_blank" rel="noopener" class="project-github-btn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── EXPERIENCE ─── -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// Experience & Training</span>
+        <h2 class="section-title">My Journey</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal-left delay-1">
+          <div class="timeline-dot">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Full Stack Development Intern</h3>
+                <p class="timeline-company">NxtWave Learning</p>
+              </div>
+              <span class="timeline-badge active">Active</span>
+            </div>
+            <span class="timeline-period">May 2026 – Present</span>
+            <ul class="timeline-points">
+              <li>Developed responsive full-stack web applications using Python, Django, React.js, SQL, and REST APIs.</li>
+              <li>Built backend APIs and integrated databases while applying OOP and problem-solving concepts.</li>
+              <li>Collaborated on end-to-end application development using Git and modern development practices.</li>
+            </ul>
+            <div class="timeline-tech">
+              <span class="tech-tag sm">Python</span>
+              <span class="tech-tag sm">Django</span>
+              <span class="tech-tag sm">React.js</span>
+              <span class="tech-tag sm">SQL</span>
+              <span class="tech-tag sm">Git</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left delay-2">
+          <div class="timeline-dot past">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Python and DSA Bootcamp Trainee</h3>
+                <p class="timeline-company">Tap Academy</p>
+              </div>
+              <span class="timeline-badge">Training</span>
+            </div>
+            <span class="timeline-period">April 2026</span>
+            <ul class="timeline-points">
+              <li>Developed understanding of OOP concepts, problem-solving techniques, and basic algorithms.</li>
+              <li>Practiced coding problems to improve logical thinking and programming skills.</li>
+            </ul>
+            <div class="timeline-tech">
+              <span class="tech-tag sm">Python</span>
+              <span class="tech-tag sm">DSA</span>
+              <span class="tech-tag sm">OOP</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CERTIFICATIONS ─── -->
+  <section class="section section-alt" id="certifications">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// Certifications</span>
+        <h2 class="section-title">Credentials & Achievements</h2>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal-up delay-1">
+          <div class="cert-icon">🏆</div>
+          <div class="cert-body">
+            <h4 class="cert-title">Java and DSA Bootcamp</h4>
+            <p class="cert-issuer">Tap Academy</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal-up delay-2">
+          <div class="cert-icon">✅</div>
+          <div class="cert-body">
+            <h4 class="cert-title">Problem Solving (Basic) – Java</h4>
+            <p class="cert-issuer">HackerRank</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal-up delay-3">
+          <div class="cert-icon">⭐</div>
+          <div class="cert-body">
+            <h4 class="cert-title">Problem Solving (Intermediate) – Java</h4>
+            <p class="cert-issuer">HackerRank</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal-up delay-4">
+          <div class="cert-icon">🌐</div>
+          <div class="cert-body">
+            <h4 class="cert-title">Develop Your Own Static Website</h4>
+            <p class="cert-issuer">NxtWave</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal-up delay-5">
+          <div class="cert-icon">📱</div>
+          <div class="cert-body">
+            <h4 class="cert-title">Develop Your Own Responsive Website</h4>
+            <p class="cert-issuer">NxtWave</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal-up delay-6">
+          <div class="cert-icon">🐍</div>
+          <div class="cert-body">
+            <h4 class="cert-title">Python Full Stack Development</h4>
+            <p class="cert-issuer">EthnoTech</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal-up delay-7">
+          <div class="cert-icon">🗄️</div>
+          <div class="cert-body">
+            <h4 class="cert-title">SQL</h4>
+            <p class="cert-issuer">NxtWave</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Open to opportunities, collaborations, and interesting conversations.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="contact-card">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.57 3.5 2 2 0 0 1 3.54 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9a16 16 0 0 0 6.9 6.9l1.36-1.36a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+918867082234" class="contact-value">+91 88670 82234</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div>
+              <span class="contact-label">Personal Email</span>
+              <a href="mailto:kishorreddy2780@gmail.com" class="contact-value">kishorreddy2780@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div>
+              <span class="contact-label">University Email</span>
+              <a href="mailto:25mrd00055@mits.ac.in" class="contact-value">25mrd00055@mits.ac.in</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/kishor-reddy-vangasam28" target="_blank" rel="noopener" class="contact-value">kishor-reddy-vangasam28</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/Kishor-Reddy-Vangasam" target="_blank" rel="noopener" class="contact-value">Kishor-Reddy-Vangasam</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal-right" id="contactForm">
+          <div class="form-group">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Hi Kishor, I'd love to connect about..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#hero" class="footer-logo">
+          <span class="logo-bracket">&lt;</span>KR<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-copy">
+          Designed & Developed with ❤️ by <strong>Vangasam Kishor Reddy</strong> &nbsp;·&nbsp; © 2026
+        </p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/kishor-reddy-vangasam28" target="_blank" rel="noopener" class="footer-link" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/Kishor-Reddy-Vangasam" target="_blank" rel="noopener" class="footer-link" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
