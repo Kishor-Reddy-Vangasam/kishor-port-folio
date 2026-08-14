@@ -157,7 +157,7 @@ document.querySelectorAll('.project-card').forEach(card => {
 const contactForm = document.getElementById('contactForm');
 const submitBtn   = document.getElementById('submitBtn');
 
-contactForm.addEventListener('submit', function (e) {
+contactForm.addEventListener('submit', async function (e) {
   e.preventDefault();
   const name    = document.getElementById('name').value.trim();
   const email   = document.getElementById('email').value.trim();
@@ -173,27 +173,46 @@ contactForm.addEventListener('submit', function (e) {
   `;
   submitBtn.disabled = true;
 
+  try {
+    const formData = new FormData(contactForm);
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData
+    });
+    const data = await response.json();
+
+    if (data.success) {
+      submitBtn.innerHTML = `
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+        Message Sent!
+      `;
+      submitBtn.style.background = '#16a34a';
+      contactForm.reset();
+    } else {
+      throw new Error(data.message || 'Submission failed');
+    }
+  } catch (err) {
+    submitBtn.innerHTML = `
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+      </svg>
+      Failed — Try Again
+    `;
+    submitBtn.style.background = '#dc2626';
+  }
+
   setTimeout(() => {
     submitBtn.innerHTML = `
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <polyline points="20 6 9 17 4 12"/>
+        <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
       </svg>
-      Message Sent!
+      Send Message
     `;
-    submitBtn.style.background = '#16a34a';
-    contactForm.reset();
-
-    setTimeout(() => {
-      submitBtn.innerHTML = `
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
-        </svg>
-        Send Message
-      `;
-      submitBtn.style.background = '';
-      submitBtn.disabled = false;
-    }, 3000);
-  }, 1500);
+    submitBtn.style.background = '';
+    submitBtn.disabled = false;
+  }, 3500);
 });
 
 // ── SPIN KEYFRAME (dynamic injection) ──
